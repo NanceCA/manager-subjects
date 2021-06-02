@@ -46,7 +46,7 @@ body{
     background:  #E5E5E5;
 }
 
-.organge-background{
+.orange-background{
     background: #FF6523;
 }
 
@@ -75,6 +75,11 @@ body{
 .dark-green-background{
     background: #00D6AF;
 }
+
+.black-background {
+    background: black;
+}
+
 
 /* SPACING */
 
