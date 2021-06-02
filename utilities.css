@@ -153,6 +153,7 @@ body{
     height: 400px;
     background-color:black;
     width:100%;
+    color: #fafafa;
     /* position:absolute;
     bottom:0px; */
 
@@ -168,9 +169,4 @@ body{
 
 .footer .social > * {
     margin-right: 30px;
-}
-
-.bg-dark{
-    background: #333;
-    color: #fff;
 }
