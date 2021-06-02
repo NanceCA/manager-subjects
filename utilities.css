@@ -66,6 +66,32 @@
     margin-right:20px;
 }
 
+.padding-standard-sides{
+    padding: 0 30px 0 30px;
+}
+
+.standard-margin-top{
+    margin-top: 30px;
+}
+
+
+.small-margin-top{
+    margin-top: 15px;
+}
+
+.full-width{
+    width:100%;
+}
+
+
+/* Flex box */
+
+.flex-row-tight{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 
 /* NAVBAR */
 
@@ -85,4 +111,40 @@
 #logo{
     width: 135px;
     height:22px;
+}
+
+
+/* Footer */
+
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 400px;
+    background-color:black;
+    width:100%;
+    /* position:absolute;
+    bottom:0px; */
+
+}
+
+.footer a {
+    color: #58595B;
+}
+
+.footer a:hover {
+    color: #FFF;
+}
+
+.footer .social > * {
+    margin-right: 30px;
+}
+
+.bg-dark{
+    background: #333;
+    color: #fff;
 }
