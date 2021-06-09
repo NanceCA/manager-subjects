@@ -92,7 +92,7 @@
     <div class="container mt-5 d-flex justify-content-start">
         
         <div class="dropdown"> 
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Materia
+                <button class="btn btn-primary dropdown-toggle dropdown-btn" type="button" data-toggle="dropdown">Materia
                 <span class="caret"></span></button>
                 <ul class="dropdown-menu">
                 <input class="form-control" id="myInput" type="text" placeholder="Search..">
@@ -105,7 +105,7 @@
                 </ul>
         </div>
         <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Mentor
+            <button class="btn btn-primary dropdown-toggle dropdown-btn" type="button" data-toggle="dropdown">Mentor
             <span class="caret"></span></button>
             <ul class="dropdown-menu">
             <input class="form-control" id="myInput" type="text" placeholder="Search..">
@@ -118,7 +118,7 @@
             </ul>
         </div>
         <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Gen/Cód
+            <button class="btn btn-primary dropdown-toggle dropdown-btn" type="button" data-toggle="dropdown">Gen/Cód
             <span class="caret"></span></button>
             <ul class="dropdown-menu">
             <input class="form-control" id="myInput" type="text" placeholder="Search..">
@@ -135,64 +135,101 @@
 
     
     <div class="container mt-5">
+        <!--Collapse-->
+        <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Collective Shift
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover table table-bordered">
+                            <thead class="table-dark">
+                                <tr >
+                                  <th scope="col">Fecha</th>
+                                  <th scope="col">Nombre Mentor</th>
+                                  <th scope="col">Generación / Código</th>
+                                  <th scope="col">NPS</th>
+                                  <th scope="col">Attendance</th>
+                                  <th scope="col">Descripción</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">4 de abril - 3 de mayo</th>
+                                  <td>Mark</td>
+                                  <td>Aries Online</td>
+                                  <td><button class="nps-btn btn btn-primary btn-lg active tabla-btn">80</button></td>
+                                  <td><button class="btn btn-primary btn-lg active attendance-btn tabla-btn">85%</button></td>
+                                  <td rowspan="3">
+                                    <p>
+                                        <b>Creditos:</b> 4
+                                        <br>
+                                        <b>Descripción:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        <br>
+                                        <br>
+                                        <button class="btn btn-primary btn-sm descripcion-btn">Más acciones</button>
+                                    </p>
+                                </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4 de abril - 3 de mayo</th>
+                                    <td>Mark</td>
+                                    <td>Aries Online</td>
+                                    <td><button class="btn btn-primary btn-lg active tabla-btn">80</button></td>
+                                    <td><button class="btn btn-primary btn-lg active tabla-btn">85%</button></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">4 de abril - 3 de mayo</th>
+                                    <td>Mark</td>
+                                    <td>Aries Online</td>
+                                    <td><button id="nps-3" class="btn btn-primary btn-lg active tabla-btn">30</button></td>
+                                    <td><button id="attendance-3" class="btn btn-primary btn-lg active tabla-btn">25%</button></td>
+                                  </tr>
+                              </tbody>
+                        </table>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Mindfulness
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Legal Stuff
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+          </div>
+        
         <!--Tabla-->
         
-        <div class="table-responsive">
-            <table class="table table-hover table table-bordered">
-                <thead class="table-dark">
-                    <tr>
-                        <th scope="col">Collective Shift</th>
-                    </tr>
-                    <tr >
-                      <th scope="col">Fecha</th>
-                      <th scope="col">Nombre Mentor</th>
-                      <th scope="col">Generación / Código</th>
-                      <th scope="col">NPS</th>
-                      <th scope="col">Attendance</th>
-                      <th scope="col">Descripción</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">4 de abril - 3 de mayo</th>
-                      <td>Mark</td>
-                      <td>Aries Online</td>
-                      <td><button class="green-background">80</button></td>
-                      <td><button class="green-background">85%</button></td>
-                      <td>
-                          <p>
-                              Creditos: 4
-                              Descripción: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                          </p>
-                      </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4 de abril - 3 de mayo</th>
-                        <td>Mark</td>
-                        <td>Aries Online</td>
-                        <td><button class="orange-background">80</button></td>
-                        <td><button class="orange-background">85%</button></td>
-                        <td>
-                            
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">4 de abril - 3 de mayo</th>
-                        <td>Mark</td>
-                        <td>Aries Online</td>
-                        <td><button class="orange-background">80</button></td>
-                        <td><button class="green-background">85%</button></td>
-                        <td>
-                            <p>
-                                Creditos: 4
-                                Descripción: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            </p>
-                        </td>
-                      </tr>
-                    
-                  </tbody>
-            </table>
-        </div>
     </div>
 
   <!--Footer not to extend-->
