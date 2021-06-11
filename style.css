@@ -68,3 +68,11 @@ h4 {
   border-color: #FF6523 !important;
 }
 
+<<<<<<< HEAD
+=======
+/* show styles */
+.hidden{
+  display:none;
+}
+  
+>>>>>>> 783e68c3a4031857cb9eebdc15e88a8b0415bc26
