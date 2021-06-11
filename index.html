@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="utilities.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="utilities.css">
+    <link rel="stylesheet"  type="text/css" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="client.js"></script>
 
     <title>Subjects</title>
 </head>
@@ -23,45 +24,68 @@
         </div>
     </div>
 <!--MODAL-->  
-    
-<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-				<h4 class="modal-title" id="myModalLabel" >NPS por sesión</h4>
-                <div class="botonN" >Sofia Pérez</div>
-                <div class="botonS" >Career Skills</div> 
-                <div class="botonG" >Compass</div>
-                <div class="botonNro">Nro.de sesión</div>
-                <div class="boton1">1</div>
-                <div class="boton1">2</div>
-                <div class="boton1">3</div>
-                <select>
-                    <option value="Porcentaje">80.09%</option>
-                    <option value="Promotores">% Promotores 95.65%</option>
-                    <option value="Neutralez">% Neutralez 4.56%</option>
-                    <option value="Detractores">% Detractores 0.0%</option>
-                </select>
-                <div class="custom-select-wrapper">
-                    <div class="custom-select">
-                        <div class="custom-select__trigger"><span>Tesla</span>
-                            <div class="arrow"></div>
-                        </div>
-                        <div class="custom-options">
-                            <span class="custom-option selected" data-value="Porcentaje">80.09%</span>
-                            <span class="custom-option" data-value="Promotores">% Promotores 95.65%</span>
-                            <span class="custom-option" data-value="Neutralez">% Neutralez. 4.56%  </span>
-                            <span class="custom-option" data-value="Detractores">% Detractores 0.0%</span>
-                        </div>
-                    </div>
-                </div>                
-            </div>
-		</div>
-	</div>
-</div>
+     <!-- Muestra modal -->
+     <a href="#modal" id="muestra-modal"></a> 
+     <!-- modal -->
+     <h1 class="modal">NPS por sesión</h1>
+     <aside id="modal" class="modal">
+         <div class="info-modal">
+             <header>
+                 <!-- cerrar modal -->
+                 <a href="#" class="cerrar-modal"><span>&times;</span>X</a>
+                 <h2>NPS por sesión</h2>
+             </header>
+             <article>
+                 <div class="boton" >Sofia Pérez</div>
+                 <div class="boton" >Carrer Skills</div>
+                 <div class="boton" >Compass</div>
+                 <div class="botonS" >Nro. de Sesión </div>
+                 <div class="botonU" >1</div>
+                 <div class="botonU" >2</div>
+                 <div class="botonU" >3</div>
+                 <div class="drop">
+                     <select>
+                         <option>Selecciona una opción</option>
+                         <option>Lunes</option>
+                         <option>Martes</option>
+                         <option>Miércoles</option>
+                         <option>Jueves</option>   <option>Viernes</option>
+                     </select>
+                       
+                 
+                   </div>
+             
+                 
+             </article>
+         </div>
+         <a href="#" class="boton-cerrar-modal"></a>
+     </aside>
+ 
+   
+ 
+  <!-- Modal 2 -->
+ 
+     <h1 class="modalM">Career Skills (Sesión 1)</h1>
+     <a href="#modalM" id="muestra-modalM"></a> 
+     <aside id="modalM" class="modalM">
+         <div class="info-modalM">
+             <header>
+                 <a href="#" class="cerrar-modalM">x</a>
+                 <h2>Career Skills (Sesión 1)</h2>
+             </header>
+             <article>
+                 <div class="botonM" >Sofia Pérez</div>
+                 <div class="caja">¡Hola! Soy una caja muy estilosa</div>
+                 <p class="caja">¡Hola! Soy una caja muy estilosa</p>
+               
+                   </div>
+                 
+             </article>
+         </div>
+         <a href="#" class="botonM-cerrar-modalM"></a>
+     </aside>
+ 
+
 
 <!-- ############################################################## -->
 
