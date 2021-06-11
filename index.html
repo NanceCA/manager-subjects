@@ -12,6 +12,12 @@
     <script src="client.js"></script>
 
     <title>Subjects</title>
+    
+    <!--Javascript Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Collective Subjects</title>
 </head>
 
 <body>
@@ -23,6 +29,8 @@
             <a class="margin-right-small" href="#"><img id="logo" src="assets/logo-new.png" alt="logo"></a>
         </div>
     </div>
+
+
 <!--MODAL-->  
      <!-- Muestra modal -->
      <a href="#modal" id="muestra-modal"></a> 
@@ -94,7 +102,7 @@
     <div class="jumbotron jumbotron-fluid justify-content-center">
         <div class="container">
           <h1 class="display-4 text-center">Collective Subjects</h1>
-          <p class="lead text-center">Aquí va una descripción</p>
+          <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis vel delectus beatae laborum nisi inventore error odio sunt! Modi, nisi.</p>
         </div>
     </div>
 
@@ -103,11 +111,11 @@
     <div class="d-flex justify-content-center">
         <nav class="text-center" aria-label="...">
             <ul class="pagination pagination-lg">
-                <li class="page-item disabled">
+                <li class="page-item ">
                 <a class="page-link" href="#" tabindex="-1">Materias</a>
                 </li>
-                <li class="page-item"><a class="page-link" href="#">Staffing</a></li>
-                <li class="page-item"><a class="page-link" href="#">Notificaciones</a></li>
+                <li class="page-item disabled"><a class="page-link" href="#">Staffing</a></li>
+                <li class="page-item disabled"><a class="page-link" href="#">Notificaciones</a></li>
             </ul>
         </nav>
     </div>
@@ -116,7 +124,7 @@
     <div class="container mt-5 d-flex justify-content-start">
         
         <div class="dropdown"> 
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Materia
+                <button class="btn btn-primary dropdown-toggle dropdown-btn" type="button" data-toggle="dropdown">Materia
                 <span class="caret"></span></button>
                 <ul class="dropdown-menu">
                 <input class="form-control" id="myInput" type="text" placeholder="Search..">
@@ -129,7 +137,7 @@
                 </ul>
         </div>
         <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Mentor
+            <button class="btn btn-primary dropdown-toggle dropdown-btn" type="button" data-toggle="dropdown">Mentor
             <span class="caret"></span></button>
             <ul class="dropdown-menu">
             <input class="form-control" id="myInput" type="text" placeholder="Search..">
@@ -142,7 +150,7 @@
             </ul>
         </div>
         <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Gen/Cód
+            <button class="btn btn-primary dropdown-toggle dropdown-btn" type="button" data-toggle="dropdown">Gen/Cód
             <span class="caret"></span></button>
             <ul class="dropdown-menu">
             <input class="form-control" id="myInput" type="text" placeholder="Search..">
@@ -159,68 +167,200 @@
 
     
     <div class="container mt-5">
+        <!--Collapse-->
+        <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Collective Shift
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover table table-bordered">
+                            <thead class="table-dark">
+                                <tr >
+                                  <th scope="col">Fecha</th>
+                                  <th scope="col">Nombre Mentor</th>
+                                  <th scope="col">Generación / Código</th>
+                                  <th scope="col">NPS</th>
+                                  <th scope="col">Attendance</th>
+                                  <th scope="col">Descripción</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">4 de abril - 3 de mayo</th>
+                                  <td>Mark</td>
+                                  <td>Aries Online</td>
+                                  <td><button class="nps-btn btn btn-primary btn-lg active tabla-btn">80</button></td>
+                                  <td><button class="btn btn-primary btn-lg active attendance-btn tabla-btn">85%</button></td>
+                                  <td rowspan="3">
+                                    <p>
+                                        <b>Creditos:</b> 4
+                                        <br>
+                                        <b>Descripción:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        <br>
+                                        <br>
+                                        <button class="btn btn-primary btn-sm descripcion-btn">Más acciones</button>
+                                    </p>
+                                </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4 de abril - 3 de mayo</th>
+                                    <td>Mark</td>
+                                    <td>Aries Online</td>
+                                    <td><button class="btn btn-primary btn-lg active tabla-btn">80</button></td>
+                                    <td><button class="btn btn-primary btn-lg active tabla-btn">85%</button></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">4 de abril - 3 de mayo</th>
+                                    <td>Mark</td>
+                                    <td>Aries Online</td>
+                                    <td><button id="nps-3" class="btn btn-primary btn-lg active tabla-btn">30</button></td>
+                                    <td><button id="attendance-3" class="btn btn-primary btn-lg active tabla-btn">25%</button></td>
+                                  </tr>
+                              </tbody>
+                        </table>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Mindfulness
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-hover table table-bordered">
+                        <thead class="table-dark">
+                            <tr >
+                              <th scope="col">Fecha</th>
+                              <th scope="col">Nombre Mentor</th>
+                              <th scope="col">Generación / Código</th>
+                              <th scope="col">NPS</th>
+                              <th scope="col">Attendance</th>
+                              <th scope="col">Descripción</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">4 de abril - 3 de mayo</th>
+                              <td>Mark</td>
+                              <td>Aries Online</td>
+                              <td><button class="nps-btn btn btn-primary btn-lg active tabla-btn">80</button></td>
+                              <td><button class="btn btn-primary btn-lg active attendance-btn tabla-btn">85%</button></td>
+                              <td rowspan="3">
+                                <p>
+                                    <b>Creditos:</b> 4
+                                    <br>
+                                    <b>Descripción:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    <br>
+                                    <br>
+                                    <button class="btn btn-primary btn-sm descripcion-btn">Más acciones</button>
+                                </p>
+                            </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4 de abril - 3 de mayo</th>
+                                <td>Mark</td>
+                                <td>Aries Online</td>
+                                <td><button class="btn btn-primary btn-lg active tabla-btn">80</button></td>
+                                <td><button class="btn btn-primary btn-lg active tabla-btn">85%</button></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">4 de abril - 3 de mayo</th>
+                                <td>Mark</td>
+                                <td>Aries Online</td>
+                                <td><button id="nps-3" class="btn btn-primary btn-lg active tabla-btn">30</button></td>
+                                <td><button id="attendance-3" class="btn btn-primary btn-lg active tabla-btn">25%</button></td>
+                              </tr>
+                          </tbody>
+                    </table>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Cultural Trends
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-hover table table-bordered">
+                        <thead class="table-dark">
+                            <tr >
+                              <th scope="col">Fecha</th>
+                              <th scope="col">Nombre Mentor</th>
+                              <th scope="col">Generación / Código</th>
+                              <th scope="col">NPS</th>
+                              <th scope="col">Attendance</th>
+                              <th scope="col">Descripción</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">4 de abril - 3 de mayo</th>
+                              <td>Mark</td>
+                              <td>Aries Online</td>
+                              <td><button class="nps-btn btn btn-primary btn-lg active tabla-btn">80</button></td>
+                              <td><button class="btn btn-primary btn-lg active attendance-btn tabla-btn">85%</button></td>
+                              <td rowspan="3">
+                                <p>
+                                    <b>Creditos:</b> 4
+                                    <br>
+                                    <b>Descripción:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    <br>
+                                    <br>
+                                    <button class="btn btn-primary btn-sm descripcion-btn">Más acciones</button>
+                                </p>
+                            </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4 de abril - 3 de mayo</th>
+                                <td>Mark</td>
+                                <td>Aries Online</td>
+                                <td><button class="btn btn-primary btn-lg active tabla-btn">80</button></td>
+                                <td><button class="btn btn-primary btn-lg active tabla-btn">85%</button></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">4 de abril - 3 de mayo</th>
+                                <td>Mark</td>
+                                <td>Aries Online</td>
+                                <td><button id="nps-3" class="btn btn-primary btn-lg active tabla-btn">30</button></td>
+                                <td><button id="attendance-3" class="btn btn-primary btn-lg active tabla-btn">25%</button></td>
+                              </tr>
+                          </tbody>
+                    </table>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
         <!--Tabla-->
         
-        <div class="table-responsive">
-            <table class="table table-hover table table-bordered">
-                <thead class="table-dark">
-                    <tr>
-                        <th scope="col">Collective Shift</th>
-                    </tr>
-                    <tr >
-                      <th scope="col">Fecha</th>
-                      <th scope="col">Nombre Mentor</th>
-                      <th scope="col">Generación / Código</th>
-                      <th scope="col">NPS</th>
-                      <th scope="col">Attendance</th>
-                      <th scope="col">Descripción</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">4 de abril - 3 de mayo</th>
-                      <td>Mark</td>
-                      <td>Aries Online</td>
-                      <td><button class="green-background">80</button></td>
-                      <td><button class="green-background">85%</button></td>
-                      <td>
-                          <p>
-                              Creditos: 4
-                              Descripción: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                          </p>
-                      </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4 de abril - 3 de mayo</th>
-                        <td>Mark</td>
-                        <td>Aries Online</td>
-                        <td><button class="orange-background">80</button></td>
-                        <td><button class="orange-background">85%</button></td>
-                        <td>
-                            
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">4 de abril - 3 de mayo</th>
-                        <td>Mark</td>
-                        <td>Aries Online</td>
-                        <td><button class="orange-background">80</button></td>
-                        <td><button class="green-background">85%</button></td>
-                        <td>
-                            <p>
-                                Creditos: 4
-                                Descripción: Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            </p>
-                        </td>
-                      </tr>
-                    
-                  </tbody>
-            </table>
-        </div>
     </div>
 
+    <br>
+    <br>
+
   <!--Footer not to extend-->
-    <footer class="footer bg-dark">
+    <footer class="footer">
         <div class="flex-column-simple padding-standard-sides">
             <h3 class="standard-margin-top">Sobre Collective</h3>
             <a class="small-margin-top" href="#">Nuestra Misión</a>
