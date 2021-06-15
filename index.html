@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="utilities.css">
     <link rel="stylesheet"  type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="utilities.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="client.js"></script>
 
@@ -33,10 +33,10 @@
 
 <!--MODAL-->  
      <!-- Muestra modal -->
-     <a href="#modal" id="muestra-modal"></a> 
+     <a href="#modal" id="muestra-modal">NPS</a> 
+     <button id ="abreNPS">Nps por sesión</button> 
      <!-- modal -->
-     <h1 class="modal">NPS por sesión</h1>
-     <aside id="modal" class="modal">
+     <div id="modalNPS" class="modal">
          <div class="info-modal">
              <header>
                  <!-- cerrar modal -->
@@ -67,31 +67,32 @@
              </article>
          </div>
          <a href="#" class="boton-cerrar-modal"></a>
-     </aside>
+        </div>
  
    
  
   <!-- Modal 2 -->
  
-     <h1 class="modalM">Career Skills (Sesión 1)</h1>
-     <a href="#modalM" id="muestra-modalM"></a> 
-     <aside id="modalM" class="modalM">
-         <div class="info-modalM">
-             <header>
-                 <a href="#" class="cerrar-modalM">x</a>
+    <a href="#modalCD" id="muestra-modal">CD</a> 
+    <button id ="abreCD">Course Details</button> 
+    <div id="modalCD" class="modal">
+       <div class="info-modal">
+            <header>
+                 <a href="#" class="cerrar-modalCD"><span>&times;</span>X</a>
                  <h2>Career Skills (Sesión 1)</h2>
-             </header>
-             <article>
-                 <div class="botonM" >Sofia Pérez</div>
-                 <div class="caja">¡Hola! Soy una caja muy estilosa</div>
-                 <p class="caja">¡Hola! Soy una caja muy estilosa</p>
-               
-                   </div>
-                 
-             </article>
-         </div>
-         <a href="#" class="botonM-cerrar-modalM"></a>
-     </aside>
+            </header>
+            <article>
+                 <div class="botonDS" >Sofia Pérez</div>
+                 <div class="wrapper">
+                    <div class="box">hola soy una caja</div>
+                    <div class="box2">hola soy una caja</div>
+                  </div>
+            
+            </article>
+       </div>
+         <a href="#" class="botonCD-cerrar-modal"></a>
+    </div>
+       
  
 
 

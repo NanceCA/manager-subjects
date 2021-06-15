@@ -1,16 +1,17 @@
 // "onclick"run function to change class property to display:block from display:none;
 // Get the modal
-var modal = document.getElementById("modal");
+var modalNPS = document.getElementById("modalNPS");
+var modalDS= document.getElementById("modalDS");
 
 // Get the button that opens the modal
-var boton = document.getElementById("boton");
+var botonNPS = document.getElementById("abreNPS");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("cerrar-modal")[0];
 
 // When the user clicks on the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
+botonNPS.onclick = function() {
+  modalNPS.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
