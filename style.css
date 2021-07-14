@@ -1,5 +1,4 @@
 /* MODAL */
-
 .modal{
   /* position: fixed; Stay in place  */
   z-index: 1; /* Sit on top */
@@ -52,6 +51,22 @@ h4 {
   margin-right: 5px;
 }
 
+/*Tabla principal*/
+.tabla-btn {
+  background-color: #00F4AB !important ;
+  border-color:  #00F4AB !important;
+  color: black !important;
+}
+
+.descripcion-btn, .dropdown-btn {
+  background-color: #5319FF !important;
+  border-color: #5319FF !important;
+}
+
+#nps-3, #attendance-3 {
+  background-color: #FF6523 !important ;
+  border-color: #FF6523 !important;
+}
 
 /* show styles */
 .hidden{
